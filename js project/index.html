@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harini Shree's personal student portfolio and web development projects">
+    <title>Harini shree | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="brand">
+                <span class="brand-mark">HS</span>
+                <span>Harini Shree</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"
+                        aria-label="Switch to dark theme">🌙</button>
+                <a href="#contact" class="talk-btn">Let's talk</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero / Profile Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                    <h1>
+                        Hi, I'm Harini Shree.<br>
+                        I build thoughtful<br>
+                        digital experiences<span class="hero-dot">.</span>
+                    </h1>
+
+                    <div class="hero-lines" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p class="hero-description">
+                        I'm a student and aspiring web developer.
+                        I enjoy learning new technologies and creating
+                        attractive, responsive, and user-friendly websites.
+                    </p>
+
+                    <a href="#projects" class="work-btn">
+                        View my work <span>→</span>
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-circle"></div>
+
+                    <img src="PORFOLIO PIC.jpeg"
+                         alt="Harini Shree's profile photo"
+                         class="profile-photo"
+                         onerror="this.style.display='none';
+                         document.getElementById('photoFallback').hidden=false;">
+
+                    <div class="photo-fallback" id="photoFallback" hidden>
+                        <span>HS</span>
+                        <p>Add images/profile.jpg</p>
+                    </div>
+
+                    <span class="decoration decoration-one"></span>
+                    <span class="decoration decoration-two"></span>
+                    <span class="decoration decoration-three"></span>
+
+                    <div class="plant" aria-hidden="true">🌿</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <!-- Projects Section -->
+<section class="section projects-section" id="projects">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">WHAT I'VE BEEN CREATING</p>
+                <h2>Projects</h2>
+                <span class="heading-line"></span>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Income Tax System (click -> opens PDF) -->
+            <article class="project-card clickable-card" data-category="web">
+                <div class="project-art tax-art">
+                    <div class="tax-window">
+                        <span class="tax-title">Income Tax System</span>
+                        <p>💼 &nbsp; Salary Income</p>
+                        <p>💰 &nbsp; Other Income</p>
+                        <p>🧾 &nbsp; Deductions</p>
+                        <p class="tax-result">✅ &nbsp; Tax Payable</p>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <span class="badge badge-done">Completed</span>
+                        <h3>Income Tax System</h3>
+                        <p>A Java program that calculates income tax using income slabs and deductions.</p>
+                        <p class="tools">Java · Scanner · Conditions</p>
+                    </div>
+                    <a href="Income_Tax_Semester.pdf"
+                       target="_blank"
+                       rel="noopener"
+                       class="project-arrow card-link"
+                       aria-label="Open Income Tax System PDF">→</a>
+                </div>
+            </article>
+
+            <!-- Solar System Explorer (upcoming) -->
+            <article class="project-card" data-category="web">
+                <div class="project-art space-art">
+                    <div class="space-window">
+                        <span class="space-title">Solar System Explorer</span>
+                        <div class="planet-row">
+                            <span>☀️</span>
+                            <span>☿</span>
+                            <span>🌍</span>
+                            <span>🪐</span>
+                            <span>🌕</span>
+                        </div>
+                        <div class="space-stars">✦ &nbsp; ✧ &nbsp; ✦ &nbsp; ✧ &nbsp; ✦</div>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <div>
+                        <span class="badge badge-soon">Upcoming</span>
+                        <h3>Solar System Explorer</h3>
+                        <p>An interactive website to explore the planets of our solar system.</p>
+                        <p class="tools">HTML · CSS · JavaScript</p>
+                    </div>
+                    <button class="project-arrow details-btn"
+                            aria-label="Show Solar System Explorer details"
+                            aria-expanded="false">→</button>
+                    <p class="extra-details" hidden>
+                        Planned: clickable planets with facts like size,
+                        distance from the Sun, and orbit time.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="project-note">
+            More projects are on the way. Stay tuned!
+        </p>
+    </div>
+</section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <p class="eyebrow">TOOLS I AM LEARNING</p>
+                <h2>Skills</h2>
+                <span class="heading-line"></span>
+
+                <div class="skills-list">
+                    <div class="skill-pill">
+                        <span class="skill-icon html-icon">5</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="skill-pill">
+                        <span class="skill-icon css-icon">3</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-pill">
+                        <span class="skill-icon js-icon">JS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-pill">
+                        <span class="skill-icon teamwork-icon">✦</span>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+<section class="section contact-section" id="contact">
+    <div class="container contact-layout">
+        <div>
+            <p class="eyebrow">HAVE A QUESTION?</p>
+            <h2>Let's talk.</h2>
+            <p class="contact-intro">
+                I'd love to hear from you. Feel free to get in touch.
+            </p>
+
+            <a class="email-link"
+               href="mailto:harinishree07092007@gmail.com">
+                harinishree07092007@gmail.com
+            </a>
+
+            <div>
+                <button type="button" class="copy-btn" id="copyEmail">
+                    📋 Copy email
+                </button>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text"
+                   placeholder="Enter your name" autocomplete="name">
+            <small class="field-error" id="nameError"></small>
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email"
+                   placeholder="Enter your email" autocomplete="email">
+            <small class="field-error" id="emailError"></small>
+
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="4"
+                      placeholder="Write your message"></textarea>
+            <small class="field-error" id="messageError"></small>
+
+            <!-- Spam protection (hidden) -->
+            <input type="text" name="_gotcha" class="hp"
+                   tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <button class="work-btn" type="submit" id="submitBtn">
+                Submit message →
+            </button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+ </main>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+        <p>© <span id="year"></span> Harini Shree</p>
+
+        <div class="social-links">
+            <a href="https://github.com/harini-2007-k"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn"
+               aria-label="Visit my GitHub profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/harini-shree-46a46438a"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn"
+               aria-label="Visit my LinkedIn profile">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+
+        <a href="#home">Back to home ↑</a>
+    </div>
+</footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top"
+            aria-label="Back to top" title="Back to top">↑</button>
+
+</body>
+</html>
